@@ -1,0 +1,8 @@
+lighteval
+transformers
+datasets
+accelerate
+torch
+more-itertools
+vllm
+ray
