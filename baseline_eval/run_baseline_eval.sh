@@ -40,7 +40,7 @@ MODEL_ARGS="pretrained=$MODEL,dtype=bfloat16,data_parallel_size=1,max_model_leng
 
 
   for TASK in "${TASK_LIST[@]}"; do
-    OUTPUT_PATH="${RESULTS_DIR}"
+    OUTPUT_PATH="${RESULTS_DIR}/${MODEL//\//_}/${TASK}"
 
     echo "-------------------------\n Currently, Evaluation Running of $MODEL on $TASK \n-------------------------"
 
